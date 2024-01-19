@@ -7,8 +7,8 @@ var serverVerbs = ["GET", "GET", "GET", "POST", "GET", "POST"];
 var serverPaths = ["/", "/about", "/contact", "/login", "/panel", "/logout"];
 var serverResponses = [
     "Welcome to WEB700 Assignment 1",
-    "This assignment was prepared by Oluwademilade Salami",
-    "[Oluwademilade]: [ojsalami@myseneca.ca]",
+    "This assignment was prepared by Funmi Olupona",
+    "[Oluwademilade]: [folupona@myseneca.ca]",
     "User Logged In",
     "Main Panel",
     "Logout Complete"
