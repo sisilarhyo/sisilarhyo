@@ -25,8 +25,10 @@ function httpRequest(httpVerb, path) {
 }
 
 // Manual Testing
-console.log(httpRequest("POST", "/logout")); // Should return "200: logout"
+console.log(httpRequest("GET", "/contact")); // Should return "200: Welcome to WEB700 Assignment 1"
 console.log(httpRequest("GET", "/about")); // Should return "200: This assignment was prepared by Oluwademilade Salami"
+
+// Add more tests as needed
 
 // Additional arrays for testing
 var testVerbs = ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"];
@@ -37,26 +39,16 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-// Function to automate tests with truncation after a set number of tries
+// Function to automate tests
 function automateTests() {
-    var testCount = 0;
-    var maxTests = 4; // Set the maximum number of tests here
-
     function randomRequest() {
-        if (testCount >= maxTests) {
-            clearInterval(testInterval);
-            console.log('Automated testing completed.');
-            return;
-        }
-
         var randomVerb = testVerbs[getRandomInt(testVerbs.length)];
         var randomPath = testPaths[getRandomInt(testPaths.length)];
         var response = httpRequest(randomVerb, randomPath);
         console.log(`Request: ${randomVerb} ${randomPath} - Response: ${response}`);
-        testCount++;
     }
 
-    var testInterval = setInterval(randomRequest, 1000); // Calls randomRequest every second
+    setInterval(randomRequest, 1000); // Calls randomRequest every second
 }
 
 // Running automated tests
