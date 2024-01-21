@@ -8,7 +8,7 @@ var serverPaths = ["/", "/about", "/contact", "/login", "/panel", "/logout"];
 var serverResponses = [
     "Welcome to WEB700 Assignment 1",
     "This assignment was prepared by Funmi Olupona",
-    "[Funmi]: [ojsalami@myseneca.ca]",
+    "[Funmi]: [folupona@myseneca.ca]",
     "User Logged In",
     "Main Panel",
     "Logout Complete"
