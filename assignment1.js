@@ -7,8 +7,8 @@ var serverVerbs = ["GET", "GET", "GET", "POST", "GET", "POST"];
 var serverPaths = ["/", "/about", "/contact", "/login", "/panel", "/logout"];
 var serverResponses = [
     "Welcome to WEB700 Assignment 1",
-    "This assignment was prepared by Funmi Christianah Olupona",
-    "[Funmi]: [folupona@myseneca.ca]",
+    "This assignment was prepared by Funmi Olupona",
+    "[Funmi]: [ojsalami@myseneca.ca]",
     "User Logged In",
     "Main Panel",
     "Logout Complete"
@@ -25,7 +25,7 @@ function httpRequest(httpVerb, path) {
 }
 
 // Manual Testing
-console.log(httpRequest("GET", "/contact")); // Should return "200: Welcome to WEB700 Assignment 1"
+console.log(httpRequest("POST", "/logout")); // Should return "200: logout completed"
 console.log(httpRequest("GET", "/about")); // Should return "200: This assignment was prepared by Oluwademilade Salami"
 
 // Add more tests as needed
